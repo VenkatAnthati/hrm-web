@@ -8,7 +8,7 @@ const MainApp = () => {
 
   return <h1>
     <p onClick={handleClick} style={{ color: "blue", cursor: "pointer" }}>
-      Click here to go to About page.
+      Welcome to hrm page click here to go home page.
     </p>
   </h1>;
 };

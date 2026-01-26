@@ -5,12 +5,15 @@ import { Link, useNavigate } from 'react-router-dom';
 
 function App() {
 
-  
+
   return (
     <div className="App">
       <header className="App-header">
-      <AppRouter />
+        <AppRouter />
       </header>
+      <footer>
+        © 2026 HRM Solutions. All Rights Reserved.
+      </footer>
     </div>
   );
 }

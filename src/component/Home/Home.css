@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f6f9ff;
+}
+
+.hr-container {
+  width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 26px;
+  background: white;
+  color: blue;
+  height: 80px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.logo {
+  color: #1e40af;
+}
+
+/* Buttons */
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  padding: 10px 18px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.btn-secondary {
+  background: #14b8a6;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #2563eb;
+  margin-left: 15px;
+}
+
+/* Hero */
+
+.hero {
+  padding: 14px;
+  background: linear-gradient(to right, #e0ecff, #f4f8ff);
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #1e3a8a;
+}
+.hero-text p {
+  color: black;
+}
+
+/* Cards */
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Features */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 60px;
+  color: blue;
+}
+
+/* Why */
+
+.why {
+  text-align: center;
+  padding: 60px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+  color: blue;
+}
+
+/* Jobs + Testimonials */
+
+.jobs-testimonial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 60px;
+}
+
+.jobs ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Contact */
+
+.contact {
+  padding: 60px;
+  text-align: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+  color: blue;
+}
+
+/* Footer */
+
+footer {
+  background: #1e40af;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
