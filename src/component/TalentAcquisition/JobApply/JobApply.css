@@ -1,0 +1,86 @@
+/* Page container */
+
+.apply-container {
+  padding: 24px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Job summary (top section) */
+
+.job-summary {
+  background-color: #f3f4f6;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e7eb;
+}
+
+.job-summary h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: #1d4ed8;
+}
+
+.job-summary p {
+  color: #4b5563;
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+/* Form card */
+
+.apply-card {
+  border: 1px solid #ddd;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: grid;
+  gap: 12px;
+  background-color: whitesmoke;
+}
+
+/* Inputs */
+
+.input-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.textarea-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* Submit button */
+
+.submit-btn {
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.submit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Back button */
+
+.back-btn {
+  margin-top: 6px;
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  font-size: 14px;
+}

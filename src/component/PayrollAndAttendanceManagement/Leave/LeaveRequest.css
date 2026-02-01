@@ -1,0 +1,110 @@
+.leave-container {
+  padding: 24px;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  gap: 24px;
+}
+
+.leave-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1111b5;;
+}
+
+/* Card */
+
+.card-box {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Form */
+
+.leave-form {
+  display: grid;
+  gap: 12px;
+}
+
+.input-box,
+.textarea-box {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.textarea-box {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Button */
+
+.submit-btn {
+  width: 160px;
+  padding: 10px;
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #15803d;
+}
+
+/* Table */
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.table-header th {
+  text-align: left;
+  padding: 8px;
+  font-size: 20px;
+  color: #1111b5;
+}
+
+.table-row td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  text-align: left;
+  color: #6b7280;
+}
+
+.table-row:hover {
+  background-color: #f9fafb;
+}
+
+/* Status */
+
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+/* Empty */
+
+.empty-message {
+  padding: 16px;
+  text-align: center;
+  color: #6b7280;
+}

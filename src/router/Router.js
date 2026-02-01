@@ -13,6 +13,8 @@ import PayrollAndAttendanceManagement from "../component/PayrollAndAttendanceMan
 import PerformanceManagement from "../component/PerformanceManagement/PerformanceManagement";
 import WorkforceManagement from "../component/WorkforceManagement/WorkforceManagement";
 import HROperationsEmployeeRecords from "../component/HROperationsEmployeeRecords/HROperationsEmployeeRecords";
+import JobDetail from "../component/TalentAcquisition/JobDetail/JobDetail";
+import JobApply from "../component/TalentAcquisition/JobApply/JobApply";
 
 const AppRouter = () => {
     return (
@@ -25,6 +27,8 @@ const AppRouter = () => {
             <Route path="/compensation-benefits" element={<CompensationAndBenefits />} />
             <Route path="/employee-enagagement" element={<EmployeeEngagement />} />
             <Route path="/hr-operations" element={<HROperationsEmployeeRecords />} />
+            <Route path="/job-detail" element={<JobDetail />} />
+            <Route path="/apply-job" element={<JobApply />} />
             <Route path="/exit-management" element={<ExitManagement />} />
             <Route path="/health-welfare" element={<HealthAndWelfare />} />
             <Route path="/payroll-attendance" element={<PayrollAndAttendanceManagement />} />

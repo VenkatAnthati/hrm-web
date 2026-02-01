@@ -1,0 +1,109 @@
+.employee-container {
+    padding: 24px;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    gap: 24px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.employee-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Card */
+
+.card-box {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Form */
+
+.employee-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.input-box {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Button */
+
+.save-btn {
+    grid-column: span 1;
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Table */
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.table-header th {
+    text-align: left;
+    padding: 8px;
+    font-size: 18px;
+    color: #1111b5;
+}
+
+.table-row td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.table-row:hover {
+    background-color: #f9fafb;
+}
+
+/* Empty */
+
+.empty-message {
+    padding: 16px;
+    text-align: center;
+    color: #6b7280;
+}
+
+.emp-status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+    background-color: #fef3c7;
+  color: #92400e;
+}
+
+/* .pending {
+  background-color: #fef3c7;
+  color: #92400e;
+} */
+
+.empList-container{
+    width: 100%;
+    height: auto;
+    border: 1px solid  #ccc;
+    border-radius: 12px;
+    color: #6b7280;
+}

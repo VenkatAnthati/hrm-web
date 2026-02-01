@@ -1,0 +1,91 @@
+.page-container {
+  padding: 24px;
+  display: grid;
+  gap: 24px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1111b5;;
+}
+
+/* Card Style */
+
+.card-box {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Form Grid */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.input-box {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Button */
+
+.add-btn {
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Table */
+
+.timesheet-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.table-cell {
+  text-align: left;
+  padding: 8px;
+  font-weight: 600;
+}
+
+.padding-small {
+  padding: 8px;
+  text-align: left;
+  color: #6b7280;
+}
+
+.table-row {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-row:hover {
+  background-color: #f9fafb;
+}
+
+/* Empty Message */
+
+.empty-message {
+  padding: 16px;
+  text-align: center;
+  color: #6b7280;
+}
