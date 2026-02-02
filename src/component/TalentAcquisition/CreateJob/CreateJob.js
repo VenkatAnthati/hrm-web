@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./JobPosting.css";
+import "./CreateJob.css";
 
-const JobPosting = () => {
+const CreateJob = () => {
 
   const [jobs, setJobs] = useState([]);
 
@@ -162,4 +162,4 @@ const JobPosting = () => {
   );
 }
 
-export default JobPosting;
+export default CreateJob;

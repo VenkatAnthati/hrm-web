@@ -1,0 +1,36 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #2f3b52;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.logo {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tab {
+  padding: 12px;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #cfd8dc;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.tab:hover {
+  background: #3f4d6a;
+  color: white;
+}
+
+/* Active tab highlight */
+.tab.active {
+  background: #4caf50;
+  color: white;
+}
