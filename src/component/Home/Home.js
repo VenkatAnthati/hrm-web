@@ -12,7 +12,7 @@ const Home = () => {
 
       {/* Navbar */}
       <nav className="navbar">
-        <h2 className="logo">HRM</h2>
+        <h2 className="c">HRM</h2>
         <ul>
           <li>Home</li>
           <li>About</li>
@@ -30,10 +30,10 @@ const Home = () => {
         <div className="hero-text">
           <h1>Empowering Your Workforce</h1>
           <p>We help you build a thriving and productive team.</p>
-          <div>
+          {/* <div>
             <button className="btn-primary">Get Started</button>
             <button className="btn-link">Learn More</button>
-          </div>
+          </div> */}
         </div>
       </section>
 

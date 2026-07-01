@@ -20,12 +20,17 @@ import MainLayout from "./MainLayout";
 import LeaveRequest from "../component/PayrollAndAttendanceManagement/Leave/LeaveRequest";
 import Attendance from "../component/PayrollAndAttendanceManagement/Attendance/Attendance";
 import CreateJob from "../component/TalentAcquisition/CreateJob/CreateJob";
+import CreateEmployee from "../component/HROperationsEmployeeRecords/CreateEmployee/CreateEmployee";
 
 // Menu for normal users
 const talentAcquisition = [
     { name: "Home", path: "/job" },
     { name: "Job opening", path: "/job-openings" },
     { name: "Create Job", path: "/Create-job" }
+];
+
+const hrOperations = [
+    { name: "Create Employee", path: "/create-employee" },
 ];
 
 // Menu for admin pages
@@ -51,8 +56,11 @@ const AppRouter = () => {
             </Route>
             <Route path="/compensation-benefits" element={<CompensationAndBenefits />} />
             <Route path="/employee-enagagement" element={<EmployeeEngagement />} />
-            <Route path="/hr-operations" element={<HROperationsEmployeeRecords />} />
-
+            {/* <Route path="/hr-operations" element={<HROperationsEmployeeRecords />} /> */}
+            <Route element={<MainLayout menu={hrOperations} />}>
+                <Route path="/hr-operations" element={<HROperationsEmployeeRecords />} />
+                <Route path="/create-employee" element={<CreateEmployee />} />
+            </Route>
             <Route path="/exit-management" element={<ExitManagement />} />
             <Route path="/health-welfare" element={<HealthAndWelfare />} />
             <Route element={<MainLayout menu={payrollAndAttendanceManagement} />}>

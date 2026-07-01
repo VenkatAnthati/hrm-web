@@ -9,7 +9,7 @@ const Sidebar = ({ menu }) => {
 
     return (
         <div className="sidebar">
-            <h2 className="logo" onClick={handleToGoHomePage}>HR Panel</h2>
+            <h2 className="logo" onClick={handleToGoHomePage}>HRM</h2>
 
             {menu.map((item) => (
                 <NavLink
