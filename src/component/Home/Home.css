@@ -1,156 +1,224 @@
+/* ==========================
+   Global
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f6f9ff;
+    background: #f5f7fb;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hr-container {
-  width: 100%;
+    min-height: 100vh;
 }
 
-/* Navbar */
+/* ==========================
+   Navbar
+========================== */
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4px 26px;
-  background: white;
-  color: blue;
-  height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #2f3b52;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.navbar ul {
-  display: flex;
-  list-style: none;
-  gap: 25px;
+.logo {
+    cursor: pointer;
 }
 
-.home-title {
-  color: #1e40af;
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
 
-/* Buttons */
+.nav-links li {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav-links li:hover {
+    color: #4caf50;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-primary,
+.btn-outline {
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
 
 .btn-primary {
-  background: #2563eb;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 6px;
-  cursor: pointer;
+    background: #4caf50;
+    color: white;
+    border: none;
 }
 
 .btn-outline {
-  background: transparent;
-  border: 1px solid #2563eb;
-  color: #2563eb;
-  padding: 10px 18px;
-  border-radius: 6px;
-  margin-right: 10px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
 }
 
-.btn-secondary {
-  background: #14b8a6;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 6px;
-}
-
-.btn-link {
-  background: none;
-  border: none;
-  color: #2563eb;
-  margin-left: 15px;
-}
-
-/* Hero */
+/* ==========================
+   Hero
+========================== */
 
 .hero {
-  padding: 14px;
-  background: linear-gradient(to right, #e0ecff, #f4f8ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 350px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg,#2563eb,#4caf50);
+    color: white;
 }
 
-.hero-text h1 {
-  font-size: 48px;
-  color: #1e3a8a;
-}
-.hero-text p {
-  color: black;
+.hero-text {
+    max-width: 700px;
 }
 
-/* Cards */
-
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  text-align: center;
-  cursor: pointer;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
-/* Features */
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* ==========================
+   Features
+========================== */
 
 .features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  padding: 60px;
-  color: blue;
-  background-color: darkslategrey;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
 }
 
-/* Why */
+.card {
+    background: white;
+    color: #2f3b52;
+    border-radius: 12px;
+    padding: 35px 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
 
-.why {
-  text-align: center;
-  padding: 60px;
+    box-shadow: 0 5px 12px rgba(0,0,0,.08);
+    transition: .3s;
 }
 
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 30px;
-  color: blue;
+.card:hover {
+    transform: translateY(-5px);
+    background: #2563eb;
+    color: white;
 }
 
-/* Jobs + Testimonials */
+/* ==========================
+   Tablet
+========================== */
 
-.jobs-testimonial {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  padding: 60px;
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction: column;
+        padding:20px;
+    }
+
+    .nav-links{
+        gap:20px;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .card{
+        font-size:18px;
+    }
+
 }
 
-.jobs ul {
-  padding-left: 0;
-  list-style: none;
-}
+/* ==========================
+   Mobile
+========================== */
 
-/* Contact */
+@media (max-width:480px){
 
-.contact {
-  padding: 60px;
-  text-align: center;
-}
+    .navbar{
+        padding:15px;
+    }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 30px;
-  color: blue;
-}
+    .nav-links{
+        width:100%;
+        justify-content:center;
+        gap:15px;
+        font-size:14px;
+    }
 
-/* Footer */
+    .nav-buttons{
+        width:100%;
+        justify-content:center;
+    }
 
-footer {
-  background: #1e40af;
-  color: white;
-  text-align: center;
-  padding: 15px;
+    .btn-primary,
+    .btn-outline{
+        flex:1;
+        max-width:150px;
+    }
+
+    .hero{
+        min-height:280px;
+        padding:30px 15px;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+        padding:15px;
+    }
+
+    .card{
+        padding:25px 15px;
+        font-size:17px;
+    }
+
 }

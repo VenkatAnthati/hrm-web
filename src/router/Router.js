@@ -24,7 +24,7 @@ import CreateEmployee from "../component/HROperationsEmployeeRecords/CreateEmplo
 
 // Menu for normal users
 const talentAcquisition = [
-    { name: "Home", path: "/job" },
+    // { name: "Home", path: "/job" },
     { name: "Job opening", path: "/job-openings" },
     { name: "Create Job", path: "/Create-job" }
 ];

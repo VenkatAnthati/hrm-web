@@ -1,14 +1,15 @@
 import { Outlet } from "react-router-dom";
+import  "./MainLayout.css";
 import SideBar from "../sideBar/sideBar";
 
-const MainLayout = ({menu}) => {
+const MainLayout = ({ menu }) => {
   return (
-    <div style={{ display: "flex" }}>
+    <div className="app-layout">
       <SideBar menu={menu} />
 
-      <div style={{ flex: 1, padding: "20px" }}>
+      <main className="main-content">
         <Outlet />
-      </div>
+      </main>
     </div>
   );
 };

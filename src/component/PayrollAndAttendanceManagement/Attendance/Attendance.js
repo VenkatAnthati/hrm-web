@@ -36,7 +36,7 @@ const Attendance = () => {
                     name="project"
                     value={form.project}
                     onChange={handleChange}
-                    className="input-box"
+                    className="drop-down-box"
                 >
                     <option value="">Select Project</option>
                     <option value="Payroll System">Payroll System</option>
@@ -104,10 +104,6 @@ const Attendance = () => {
                     </tbody>
                 </table>
 
-            </div>
-
-            <div className="card-box">
-                time sheet history search need to add here
             </div>
 
         </div>

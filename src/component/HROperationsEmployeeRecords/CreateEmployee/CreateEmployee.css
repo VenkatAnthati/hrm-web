@@ -34,8 +34,14 @@
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    height: 30px;
 }
-
+.drop-down-box {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 50px;
+}
 /* Button */
 
 .save-btn {

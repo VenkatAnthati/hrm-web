@@ -74,7 +74,7 @@ const CreateEmployee = () => {
                     name="department"
                     value={form.department}
                     onChange={handleChange}
-                    className="input-box"
+                    className="drop-down-box"
                 >
                     <option value="">Select Department</option>
                     <option value="HR">HR</option>

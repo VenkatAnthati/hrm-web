@@ -57,7 +57,7 @@ const LeaveRequest = () => {
           name="leaveType"
           value={form.leaveType}
           onChange={handleChange}
-          className="input-box"
+          className="drop-down-box"
         >
           <option value="">Select Leave Type</option>
           <option value="Casual Leave">Casual Leave</option>

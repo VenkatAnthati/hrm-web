@@ -61,7 +61,7 @@ const CreateJob = () => {
           name="department"
           value={form.department}
           onChange={handleChange}
-          className="input-box"
+          className="drop-down-box"
         >
           <option value="">Select Department</option>
           <option value="IT">IT</option>
@@ -83,7 +83,7 @@ const CreateJob = () => {
           name="type"
           value={form.type}
           onChange={handleChange}
-          className="input-box"
+          className="drop-down-box"
         >
           <option value="">Job Type</option>
           <option value="Full Time">Full Time</option>
@@ -116,47 +116,45 @@ const CreateJob = () => {
       </div>
 
       {/* Jobs Table */}
-      <div className="card-box">
-
-        <table className="job-table">
-          <thead>
-            <tr className="table-header">
-              <th>Title</th>
-              <th>Department</th>
-              <th>Location</th>
-              <th>Type</th>
-              <th>Experience</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-
-          <tbody>
-
-            {jobs.length === 0 && (
-              <tr>
-                <td colSpan="6" className="empty-message">
-                  No jobs posted yet
-                </td>
+        <div class="table-wrapper">
+          <table className="job-table">
+            <thead>
+              <tr className="table-header">
+                <th>Title</th>
+                <th>Department</th>
+                <th>Location</th>
+                <th>Type</th>
+                <th>Experience</th>
+                <th>Status</th>
               </tr>
-            )}
+            </thead>
 
-            {jobs.map((job) => (
-              <tr key={job.id} className="table-row">
-                <td>{job.title}</td>
-                <td>{job.department}</td>
-                <td>{job.location}</td>
-                <td>{job.type}</td>
-                <td>{job.experience}</td>
-                <td>
-                  <span className="status open">{job.status}</span>
-                </td>
-              </tr>
-            ))}
+            <tbody>
 
-          </tbody>
-        </table>
+              {jobs.length === 0 && (
+                <tr>
+                  <td colSpan="6" className="empty-message">
+                    No jobs posted yet
+                  </td>
+                </tr>
+              )}
 
-      </div>
+              {jobs.map((job) => (
+                <tr key={job.id} className="table-row">
+                  <td>{job.title}</td>
+                  <td>{job.department}</td>
+                  <td>{job.location}</td>
+                  <td>{job.type}</td>
+                  <td>{job.experience}</td>
+                  <td>
+                    <span className="status open">{job.status}</span>
+                  </td>
+                </tr>
+              ))}
+
+            </tbody>
+          </table>
+        </div>
 
     </div>
   );
